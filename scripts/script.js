@@ -9,25 +9,14 @@ $(document).ready(function () {
 
     let userName = $("#userName").val();
     console.log("user name = ", userName);
-    //let coolFacts = generateCoolNameFacts(userName);
 
     console.log("name length f/n = ", nameLength(userName));
 
     console.log("you clicked the button");
-    //console.log("from ln 12", generateCoolNameFacts(userName));
 
     $("#coolNameFactsOutput").html(nameLength(userName));
 
-    // $("#coolNameFactsOutput").html(getSpiritAnimal(userName));
 
-    // $("#coolNameFactsOutput").html(
-    //   '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Y-YVLipceJt1DMU3Bs8uIAHaFj%26pid%3DApi&f=1">'
-    // );
-
-    // $("#coolNameImg").attr(
-    //   "src",
-    //   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Y-YVLipceJt1DMU3Bs8uIAHaFj%26pid%3DApi&f=1"
-    // );
   });
 });
 
@@ -45,9 +34,6 @@ function generateCoolNameFacts(userName) {
 }
 
 function nameLength(name) {
-  //named, not anonymous. Name = nameLength
-  //parameters, one = j
-  //void if it has no return value
 
   return "Your name is " + name.length + " letters long!";
 }
@@ -63,7 +49,6 @@ function nameEnd(name) {
 }
 
 function reverseName(name) {
-  // let arrSomeArray = [1, "cat", "Susan", [j, "stuff"]];
 
   let arrName = name.split();
 
@@ -71,7 +56,6 @@ function reverseName(name) {
 }
 
 function getSpiritAnimal(x) {
-  //flow control: case switch, loop, if/then
 
   if (x.length == 3) {
     //execute some code
