@@ -30,14 +30,13 @@ function getSpiritAnimal(name) {
 } else if (name.length == 4) {
   return "Ur spirit animal is a cat!";
 } else if (name.length == 5) {
-  return "Ur spirit animal is a snake, creepy.";
+  return "UR SPIRIT ANIMAL ARE A DOGE MUCH WOW";
 } else if (name.length == 6) {
   return "ur spirit animal is a coyote?";
 } else if (name.length == 7) {
   return "Ur spirit animal is a mouse i think.";
 } else {
-  return "YOU ARE A DOGE CONGRATS!";
-}
+  return "Ur spirit animal is a snake, creepy.";}
 }
 
 
