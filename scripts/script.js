@@ -10,59 +10,54 @@ $(document).ready(function () {
     let userName = $("#userName").val();
     console.log("user name = ", userName);
 
-    console.log("name length f/n = ", nameLength(userName));
+    console.log("spirit animal f/n = ", getSpiritAnimal(userName));
 
     console.log("you clicked the button");
 
-    $("#coolNameFactsOutput").html(nameLength(userName));
-
+    $("#coolNameFactsOutput").html(getSpiritAnimal(userName) + (vowel_count(userName)));
 
   });
 });
 
-function generateCoolNameFacts(userName) {
-  let coolFacts = "";
 
-  coolFacts = nameLength(userName);
-  coolFacts += " <br> " + nameStart(userName);
-  coolFacts += "<h3> " + nameEnd(userName) + "</h3>";
-  coolFacts += "<h2>" + reverseName(userName) + "</h2>";
 
-  console.log("initialized the'm coolFacts variable: " + coolFacts);
+function getSpiritAnimal(name) {
 
-  return coolFacts;
+  if (name.length == 3) {
+  return "You are slug!";
+} else if (name.length > 10) {
+  return "Ur spirit animal is a centipede because its longer than 10...";
+} else if (name.length == 4) {
+  return "Ur spirit animal is a cat!";
+} else if (name.length == 5) {
+  return "Ur spirit animal is a snake, creepy.";
+} else if (name.length == 6) {
+  return "ur spirit animal is a coyote?";
+} else if (name.length == 7) {
+  return "Ur spirit animal is a mouse i think.";
+} else {
+  return "YOU ARE A DOGE CONGRATS!";
+}
 }
 
-function nameLength(name) {
 
-  return "Your name is " + name.length + " letters long!";
-}
-
-function nameStart(name) {
-  return "the first letter of your name is " + name[0];
-}
-
-function nameEnd(name) {
-  let lastIndex = name.length - 1;
-
-  return "the last letter of your name is " + name[lastIndex];
-}
-
-function reverseName(name) {
-
-  let arrName = name.split();
-
-  revName = arrName.reverse();
-}
-
-function getSpiritAnimal(x) {
-
-  if (x.length == 3) {
-    //execute some code
-    return "you are slug!";
-  } else if (x.length > 10) {
-    return "u spirit animal is iguana";
-  } else {
-    return "u are nothing.";
+function vowel_count(name)
+{
+  var vowel_list = 'aeiouAEIOU';
+  var vcount = 0;
+  
+  for(var x = 0; x < name.length ; x++)
+  {
+    if (vowel_list.indexOf(name[x]) !== -1)
+    {
+      vcount += 1;
+    }
+  
   }
+  return " Also you have " + vcount + " vowels in your name which is kinda cool right?";
 }
+
+
+
+
+
