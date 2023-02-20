@@ -1,11 +1,9 @@
 $(document).ready(function () {
-  console.log("doc is ready");
+  console.log("Ready to roll");
 
-  //let revName;
 
   $("#btnGetFacts").click(function () {
     $("#coolNameFactsOutput").html();
-    // handle it if input is blank
 
     let userName = $("#userName").val();
     console.log("user name = ", userName);
@@ -20,7 +18,7 @@ $(document).ready(function () {
 });
 
 
-
+// Spirit animal function
 function getSpiritAnimal(name) {
 
   if (name.length == 3) {
@@ -39,7 +37,7 @@ function getSpiritAnimal(name) {
   return "Ur spirit animal is a snake, creepy.";}
 }
 
-
+// Vowel Count function
 function vowel_count(name)
 {
   var vowel_list = 'aeiouAEIOU';
