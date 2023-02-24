@@ -53,8 +53,3 @@ function vowel_count(name)
   }
   return " Also you have " + vcount + " vowels in your name which is kinda cool right?";
 }
-
-
-
-
-

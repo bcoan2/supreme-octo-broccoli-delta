@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
 @import url('https://fonts.googleapis.com/css?family=Trirong');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 body
     {
     width: 100%;
@@ -22,8 +22,8 @@ head {
   padding: 70px;
 }
 
-body {
-  font-family: 'Quicksand', sans-serif;
+ body {
+  font-family: 'Lobster', cursive;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
@@ -32,5 +32,4 @@ body {
   color: rgba(0, 0, 0, 0.8);
   -webkit-font-smoothing: antialiased;
 
-}
-
+} 
